@@ -7,14 +7,32 @@ body {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, auto);
+    grid-gap: 10px;
 }
 
 nav {
     background-color: aqua;
 }
 
+.navGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+#navFigGrid{
+    grid-column: 1;
+}
+
+#navMenGrid{
+    text-align: right;
+    grid-column: 3;
+    background-color: yellowgreen;
+}
+
+
 .companyLogo {
-    width: 5%;
+    width: 100%;
+    object-fit: contain;
 }
 
 header {
@@ -32,6 +50,7 @@ h2 {
 }
 
 footer {
+   
     background-color: blanchedalmond;
 }
 
@@ -144,6 +163,18 @@ footer {
     #contact textarea {
         width: 100%
     }
+
+    #navFigGrid{
+        grid-column: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #navMenGrid{
+        display: none;
+    }
+    
 }
 
 @media (max-width: 790px) {
