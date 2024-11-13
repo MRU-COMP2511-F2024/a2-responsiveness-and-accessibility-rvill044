@@ -4,35 +4,62 @@
 <head>
     <meta charset="utf-8">
     <title>Index</title>
-    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/assign2.css">
 </head>
 
-<body class="content-body">
+<body>
+    <nav>
+        <figure>
+            <img class="companyLogo" src="images/logo.png" alt="companyLogo">
+        </figure>
+        this is the nav section
+    </nav>
+    <header>
+        <h1>Write something about your website</h1>
+        <figure>
+            <img class="imgHeader" src="images/revernova.jpg" alt="revernova">
+        </figure>
+    </header>
+    <main>
+        <h2>Some of the products we provide</h2>
 
-    <h1 class="titleheader"> Home </h1>
+        <div class="content">
+            <section id="sectionOne">
+                Product 1
+            </section>
+            <section id="sectionTwo">
+                Product 2
+            </section>
+            <section id="sectionThree">
+                Product 3
+            </section>
+            <section id="sectionFour">
+                Product 4
+            </section>
 
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="contactMe.html">Contact Me</a>
-        <div class="dropdown">
-            <button class="dropbtn">My Hobbies
-            </button>
-            <div class="dropdown-content">
-                <a href="lifting.html">Lifting</a>
-                <a href="gunpla.html">Gunpla</a>
+            <div class="contactForm">
+                this is contact form
+                <form id="contact" method="get">
+                    <dt><br>E-mail</dt>
+                    <dd>
+                        <input type="email" name="email" placeholder="name@gmail.com" required>
+                    </dd>
+                    <dt><br>Subject</dt>
+                    <dd>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </dd>
+                    <dt><br>Body</dt>
+                    <dd>
+                        <textarea placeholder="Body"></textarea>
+                    </dd>
+                    <input id="submitBtn" type="submit">
+                </form>
             </div>
         </div>
-    </div>
-
-    <div>
-        <h1>Hello this is my website!</h1>
-
-        <p> Hi I'm Rae! On this website you can explore two of my hobbies that I have. One of them being lifting while the other is gunpla. Go over to the naviation bar "My Hobbies" to learn more about my hobbies.</p>
-        <figure>
-            <img src="images/logo.png" alt="companyLogo" title="myCompanyLogo">
-            <figcaption>This is my company logo! Its a stylized R and an A to represent the first two letters of my name.</figcaption>
-        </figure> <br>
-    </div>
+        
+    </main>
+    <footer>this is footer</footer>
 </body>
 
 </html>

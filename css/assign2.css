@@ -1,0 +1,154 @@
+html {
+    max-width: 790px;
+    margin: 0 auto;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+
+nav {
+    background-color: aqua;
+}
+
+.companyLogo {
+    width: 5%;
+}
+
+header {
+    background-color: bisque;
+}
+
+.imgHeader {
+    width: 25%;
+}
+
+div {}
+
+h2 {
+    background-color: aquamarine;
+}
+
+footer {
+    background-color: blanchedalmond;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+    grid-gap: 10px;
+
+}
+
+#sectionOne,
+#sectionTwo,
+#sectionThree,
+#sectionFour {
+    background-color: cadetblue;
+}
+
+.contactForm {
+    background-color: azure;
+}
+
+
+#sectionOne {
+    grid-column: 1/3;
+}
+
+#sectionTwo {
+    grid-column: 3/5;
+}
+
+#sectionThree {
+    grid-column: 1/3;
+}
+
+#sectionFour {
+    grid-column: 3/5;
+}
+
+.contactForm {
+    grid-column: 2/4;
+    text-align: left;
+    padding-right: 10px;
+}
+
+#contact {
+    width: 100%;
+}
+
+#contact textarea {
+    width: 100%;
+    max-width: 100%;
+}
+
+#submitBtn {
+    display: block;
+    margin-left: auto;
+    margin-top: 10px;
+    max-width: 645px;
+}
+
+#contact dt {
+    padding-left: 40px;
+}
+
+h2 {
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+/* MEDIA */
+
+@media (max-width: 590px) {
+    .content {
+        /* grid-template-columns: 1fr; */
+        grid-template-rows: auto;
+        background-color: coral;
+    }
+
+    #sectionOne {
+        grid-column: 1/5;
+    }
+
+    #sectionTwo {
+        grid-column: 1/5;
+    }
+
+    #sectionThree {
+        grid-column: 1/5;
+    }
+
+    #sectionFour {
+        grid-column: 1/5;
+    }
+
+    .contactForm {
+        grid-column: 2/4;
+        text-align: left;
+    }
+
+    #contact input,
+    #contact textarea {
+        width: 100%
+    }
+}
+
+@media (max-width: 790px) {
+    .content {
+        background-color: lightgrey;
+    }
+
+}
