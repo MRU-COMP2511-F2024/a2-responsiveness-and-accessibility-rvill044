@@ -23,18 +23,27 @@ nav {
 
 #navFigGrid {
     grid-column: 1;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+.menuLink{
+    background-color: beige;
+    padding: 10px 10px 10px 10px;
 }
 
 #navMenGrid {
+    background-color: yellowgreen;
     text-align: right;
     grid-column: 3;
-    background-color: yellowgreen;
     display: flex;
     align-items:center;
-    justify-content:space-evenly;    
+    justify-content:space-evenly;
 }
 
 .companyLogo {
+    padding: 10px 10px 10px 10px;
     width: 100%;
     object-fit: contain;
 }
@@ -138,7 +147,6 @@ h2,header,footer {
 
 @media (max-width: 590px) {
     .content {
-        /* grid-template-columns: 1fr; */
         grid-template-rows: auto;
         background-color: coral;
     }
