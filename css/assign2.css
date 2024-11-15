@@ -135,10 +135,6 @@ footer {
 
 /* END OF CONTENT CSS */
 /* START OF CONTACT FORM */
-.contactForm {
-    background-color: #4D5061;
-}
-
 .contactForm h2 {
     background-color: #CDD1C4;
     color: #4D5061;
@@ -152,6 +148,7 @@ footer {
 }
 
 .contactForm {
+    background-color: #4D5061;
     grid-column: 2/4;
     text-align: left;
     padding-right: 10px;
